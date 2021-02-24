@@ -3,16 +3,16 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
-def a(x):
-    return 0.75 - 0.25 * x
+def a(b):
+    return 0.75 - 0.25 * b
 
 
-def c(x):
-    return 1.5 - x
+def c(b):
+    return 1.5 - b
 
 
-def d(x):
-    return 2 - 4 * x
+def d(b):
+    return 2 - 4 * b
 
 
 def solve_system(sigma=0.5):
@@ -49,7 +49,7 @@ def plot_graph(type='1st'):
 	y_2 = d(x)
 	y_3 = c(x)
 
-	plt.figure(figsize=(15, 11))
+	plt.figure(figsize=(15, 12))
 
 	plt.vlines(0, -0.05, 1.2, 'darkblue', linewidth=3)
 	plt.hlines(0, -0.05, 1, 'darkblue', linewidth=3)
